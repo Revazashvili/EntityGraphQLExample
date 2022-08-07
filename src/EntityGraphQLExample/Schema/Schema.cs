@@ -20,7 +20,7 @@ public static class Schema
             "Fetch active companies");
         
         schemaProvider.AddMutationsFrom<CompanyMutations>();
-        
+        schemaProvider.AddEnum("role", typeof(CompanyMemberRole), "company member role");
         
         // write to file
         File.WriteAllText("schema.graphql", schemaProvider.ToGraphQLSchemaString());

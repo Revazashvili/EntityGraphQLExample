@@ -19,6 +19,12 @@ enum CompanyMemberRole {
 	Admin
 }
 
+"""company member role"""
+enum role {
+	Accountant
+	Admin
+}
+
 type Query {
 	"""Fetch active companies"""
 	activeCompanies: [Company!]
