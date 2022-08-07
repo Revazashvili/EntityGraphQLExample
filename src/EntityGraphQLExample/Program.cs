@@ -1,3 +1,4 @@
+using EntityGraphQL.AspNet;
 using EntityGraphQLExample.Database;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddDbContext<CibContext>(opt => opt.UseInMemoryDatabase("cib"));
+builder.Services.AddGraphQLSchema<CibContext>();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
@@ -24,7 +26,11 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
-app.MapControllers();
+app.UseRouting();
+app.UseEndpoints(routeBuilder =>
+{
+    routeBuilder.MapControllers();
+    routeBuilder.MapGraphQL<CibContext>();
+});
 
 app.Run();

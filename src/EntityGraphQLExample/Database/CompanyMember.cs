@@ -7,6 +7,6 @@ public class CompanyMember
     public string Pin { get; set; }
     public string Status { get; set; }
     public CompanyMemberRole Role { get; set; }
-    public DateOnly MembershipDate { get; set; }
+    public DateTime MembershipDate { get; set; }
     public ICollection<CompanyMemberPermission> Permissions { get; set; }
 }

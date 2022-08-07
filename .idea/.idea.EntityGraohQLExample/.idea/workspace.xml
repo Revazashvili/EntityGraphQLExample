@@ -5,17 +5,11 @@
     <projectFile profileName="IIS Express">src/EntityGraphQLExample/EntityGraphQLExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74f505a6-ca26-4618-9019-2d551281b59d" name="Changes" comment="add empty web api">
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Common/Constants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CibContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/Company.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMember.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMemberPermission.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMemberRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/DatabaseSeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/SubProduct.cs" afterDir="false" />
+    <list default="true" id="74f505a6-ca26-4618-9019-2d551281b59d" name="Changes" comment="add database with seeder">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EntityGraohQLExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EntityGraohQLExample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/Company.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/Company.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMember.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/DatabaseSeeder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/DatabaseSeeder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/EntityGraphQLExample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/EntityGraphQLExample.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Program.cs" afterDir="false" />
     </list>
@@ -23,6 +17,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ce7f1971b374709ad390a09d49cb2c594e000/9f/c9cb3e60/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659851579642</updated>
-      <workItem from="1659851584204" duration="2268000" />
+      <workItem from="1659851584204" duration="3035000" />
     </task>
     <task id="LOCAL-00001" summary="add empty web api">
       <created>1659851621722</created>
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659851621722</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add database with seeder">
+      <created>1659853945753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659853945753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add empty web api" />
-    <option name="LAST_COMMIT_MESSAGE" value="add empty web api" />
+    <MESSAGE value="add database with seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="add database with seeder" />
   </component>
 </project>

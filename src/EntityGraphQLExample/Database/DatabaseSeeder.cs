@@ -39,7 +39,7 @@ public static class DatabaseSeeder
                 Inn = "182987456",
                 Name = "Company 1",
                 Status = Constants.StatusActive,
-                EstablishmentDate = DateOnly.Parse("2020-01-01"),
+                EstablishmentDate = DateTime.Now.AddYears(-2),
                 CompanyMembers = new List<CompanyMember>
                 {
                     new()
@@ -48,7 +48,7 @@ public static class DatabaseSeeder
                         Pin = "21837128362",
                         Role = CompanyMemberRole.Accountant,
                         Status = Constants.StatusActive,
-                        MembershipDate = DateOnly.Parse("2021-01-01"),
+                        MembershipDate = DateTime.Now.AddYears(-1),
                         Permissions = new List<CompanyMemberPermission>
                         {
                             new()
@@ -74,7 +74,7 @@ public static class DatabaseSeeder
                         Pin = "19237782364",
                         Role = CompanyMemberRole.Admin,
                         Status = Constants.StatusActive,
-                        MembershipDate = DateOnly.Parse("2020-01-01")
+                        MembershipDate = DateTime.Now.AddYears(-2)
                     },
                 }
             });
@@ -84,7 +84,7 @@ public static class DatabaseSeeder
             Inn = "712863924",
             Name = "Company 2",
             Status = Constants.StatusActive,
-            EstablishmentDate = DateOnly.Parse("2018-01-01"),
+            EstablishmentDate = DateTime.Now.AddYears(-3),
             CompanyMembers = new List<CompanyMember>
             {
                 new()
@@ -93,7 +93,7 @@ public static class DatabaseSeeder
                     Pin = "45691428512",
                     Role = CompanyMemberRole.Admin,
                     Status = Constants.StatusActive,
-                    MembershipDate = DateOnly.Parse("2028-01-01"),
+                    MembershipDate = DateTime.Now.AddYears(-3),
                     Permissions = new List<CompanyMemberPermission>
                     {
                         new()
