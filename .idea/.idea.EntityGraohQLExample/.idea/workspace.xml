@@ -5,11 +5,10 @@
     <projectFile profileName="IIS Express">src/EntityGraphQLExample/EntityGraphQLExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74f505a6-ca26-4618-9019-2d551281b59d" name="Changes" comment="add CompanyMutations">
+    <list default="true" id="74f505a6-ca26-4618-9019-2d551281b59d" name="Changes" comment="add enum in schema">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EntityGraohQLExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EntityGraohQLExample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMemberRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMemberRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Schema/Schema.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Schema/Schema.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/EntityGraphQLExample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/EntityGraphQLExample.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659851579642</updated>
-      <workItem from="1659851584204" duration="6808000" />
+      <workItem from="1659851584204" duration="7767000" />
     </task>
     <task id="LOCAL-00001" summary="add empty web api">
       <created>1659851621722</created>
@@ -121,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659857891468</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add enum in schema">
+      <created>1659858785210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659858785210</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +153,7 @@
     <MESSAGE value="setup basic graplql server" />
     <MESSAGE value="fix pipeline" />
     <MESSAGE value="add CompanyMutations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CompanyMutations" />
+    <MESSAGE value="add enum in schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="add enum in schema" />
   </component>
 </project>

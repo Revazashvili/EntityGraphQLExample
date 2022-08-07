@@ -1,6 +1,7 @@
 using EntityGraphQL.AspNet;
 using EntityGraphQLExample.Database;
 using EntityGraphQLExample.Schema;
+using GraphQL.Server.Ui.Altair;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +33,10 @@ app.UseEndpoints(routeBuilder =>
 {
     routeBuilder.MapControllers();
     routeBuilder.MapGraphQL<CibContext>();
+    routeBuilder.MapGraphQLAltair(new AltairOptions
+    {
+        GraphQLEndPoint = PathString.FromUriComponent("/graphql")
+    });
 });
 
 app.Run();
