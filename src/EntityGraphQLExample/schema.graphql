@@ -1,0 +1,99 @@
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+scalar Boolean
+scalar Char
+scalar Date
+scalar Float
+scalar ID
+scalar Int
+scalar String
+
+directive @include(if: Boolean!) on FIELD | FRAGMENT_SPREAD | INLINE_FRAGMENT
+directive @skip(if: Boolean!) on FIELD | FRAGMENT_SPREAD | INLINE_FRAGMENT
+
+enum CompanyMemberRole {
+	Accountant
+	Admin
+}
+
+type Query {
+	"""Fetch active companies"""
+	activeCompanies: [Company!]
+	companies: [Company!]!
+	"""Return a Company by its Id"""
+	company(id: Int!): Company
+	"""Return a CompanyMember by its Id"""
+	companyMember(id: Int!): CompanyMember
+	"""Return a CompanyMemberPermission by its Id"""
+	companyMemberPermission(id: Int!): CompanyMemberPermission
+	companyMemberPermissions: [CompanyMemberPermission!]!
+	companyMembers: [CompanyMember!]!
+	"""Return a Product by its Id"""
+	product(id: Int!): Product
+	products: [Product!]!
+	"""Return a SubProduct by its Id"""
+	subProduct(id: Int!): SubProduct
+	subProducts: [SubProduct!]!
+}
+
+type Company {
+	"""Return a CompanyMember by its Id"""
+	companyMember(id: Int!): CompanyMember
+	companyMembers: [CompanyMember!]!
+	establishmentDate: Date!
+	id: Int!
+	inn: String!
+	name: String!
+	status: String!
+}
+
+type CompanyMember {
+	id: Int!
+	membershipDate: Date!
+	name: String!
+	"""Return a CompanyMemberPermission by its Id"""
+	permission(id: Int!): CompanyMemberPermission
+	permissions: [CompanyMemberPermission!]!
+	pin: String!
+	role: CompanyMemberRole!
+	status: String!
+}
+
+type CompanyMemberPermission {
+	id: Int!
+	productCode: String!
+	status: String!
+	subProductCode: String!
+}
+
+type Product {
+	code: String!
+	description: String!
+	id: Int!
+	status: String!
+	"""Return a SubProduct by its Id"""
+	subProduct(id: Int!): SubProduct
+	subProducts: [SubProduct!]!
+}
+
+type SubProduct {
+	code: String!
+	description: String!
+	id: Int!
+	product: Product!
+	status: String!
+}
+
+"""Information about subscriptions"""
+type SubscriptionType {
+	name: String!
+}
+
+type Mutation {
+	"""Add a new person to the system"""
+	addCompany(name: String!, inn: String!, establishmentDate: Date!): Company!
+}
+

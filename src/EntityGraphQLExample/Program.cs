@@ -1,5 +1,6 @@
 using EntityGraphQL.AspNet;
 using EntityGraphQLExample.Database;
+using EntityGraphQLExample.Schema;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddDbContext<CibContext>(opt => opt.UseInMemoryDatabase("cib"));
-builder.Services.AddGraphQLSchema<CibContext>();
+builder.Services.AddGraphQLSchema(Schema.AddGraphQlOptions);
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
