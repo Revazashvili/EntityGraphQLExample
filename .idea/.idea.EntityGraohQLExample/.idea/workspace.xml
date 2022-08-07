@@ -5,12 +5,7 @@
     <projectFile profileName="IIS Express">src/EntityGraphQLExample/EntityGraphQLExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74f505a6-ca26-4618-9019-2d551281b59d" name="Changes" comment="add database with seeder">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EntityGraohQLExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EntityGraohQLExample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/Company.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/Company.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/CompanyMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/DatabaseSeeder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Database/DatabaseSeeder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/EntityGraphQLExample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/EntityGraphQLExample.csproj" afterDir="false" />
+    <list default="true" id="74f505a6-ca26-4618-9019-2d551281b59d" name="Changes" comment="setup basic graplql server">
       <change beforePath="$PROJECT_DIR$/src/EntityGraphQLExample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityGraphQLExample/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659851579642</updated>
-      <workItem from="1659851584204" duration="3035000" />
+      <workItem from="1659851584204" duration="3447000" />
     </task>
     <task id="LOCAL-00001" summary="add empty web api">
       <created>1659851621722</created>
@@ -101,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659853945753</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="setup basic graplql server">
+      <created>1659854634459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659854634459</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +126,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add empty web api" />
     <MESSAGE value="add database with seeder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add database with seeder" />
+    <MESSAGE value="setup basic graplql server" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup basic graplql server" />
   </component>
 </project>
